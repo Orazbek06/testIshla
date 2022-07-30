@@ -3,74 +3,80 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/fon">
+    android:background="@drawable/fon"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Test Ishla"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        />
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="Выберите предмет"
         android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:orientation="vertical">
-                <Button
-                android:id="@+id/orgkomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:backgroundTint="@color/salad"
-            android:textSize="16sp"
-            android:text="Организация компьютера"
-            android:textColor="@color/black"/>
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/orgkomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/salad"
+                android:text="Организация компьютера"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
             <Button
                 android:id="@+id/webButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:backgroundTint="@color/salad"
-            android:textSize="16sp"
-            android:text="Web-программирование"
-            android:textColor="@color/black"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/salad"
+                android:text="Web-программирование"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
             <Button
                 android:id="@+id/algoButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:backgroundTint="@color/salad"
-                android:textSize="16sp"
                 android:text="Проектирование алгоритмов"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
             <Button
                 android:id="@+id/progButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:backgroundTint="@color/salad"
-                android:textSize="16sp"
                 android:text="Программный инжиниринг"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
